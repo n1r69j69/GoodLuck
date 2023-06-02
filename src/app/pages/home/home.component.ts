@@ -9,6 +9,7 @@ export class HomeComponent {
   public data= "Hello World";
 public color="text-primary";
 public data1 =true;
+public data4=false;
 public data3= [
   {
     name:'tum',
