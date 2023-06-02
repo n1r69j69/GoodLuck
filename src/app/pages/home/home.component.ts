@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  public data= "Hello World";
+public color="text-primary";
+public data1 =true;
 }
