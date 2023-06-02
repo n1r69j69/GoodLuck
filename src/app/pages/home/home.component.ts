@@ -36,4 +36,17 @@ public data3= [
     id: 6,
   },
 ];
+
+
+
+public constructor(){
+  this.fun1();
+
+}
+public fun1(){
+  alert('fun1');
+}
+public fun2(){
+  alert('fun2');
+}
 }
