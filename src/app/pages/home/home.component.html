@@ -1,3 +1,8 @@
 <div>{{data}}</div>
 <p class="{{color}}">Yo</p>
 <p class="{{data1==true ? 'text-primary':'text-secondary'}}">Hey You</p>
+<ul>
+    <li *ngFor="let data3 of data3">
+        <span class="mr-3">{{data3.id}}</span><span>{{data3.name}}</span>
+    </li>
+</ul>
