@@ -6,47 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  public data= "Hello World";
-public color="text-primary";
-public data1 =true;
-public data4=false;
-public data3= [
-  {
-    name:'tum',
-    id: 1,
-  },
-  {
-    name:'ha',
-    id: 2,
-  },
-  {
-    name:'yes',
-    id: 3,
-  },
-  {
-    name:'tum',
-    id: 4,
-  },
-  {
-    name:'me',
-    id: 5,
-  },
-  {
-    name:'ho',
-    id: 6,
-  },
-];
-
-
-
-public constructor(){
-  this.fun1();
-
-}
-public fun1(){
-  alert('fun1');
-}
-public fun2(){
-  alert('fun2');
-}
+ 
 }
