@@ -1,13 +1,14 @@
 
 <div class="container">
-    <div class="product">
-        <div class="card" style="width: 18rem;">
-            <img src="assets/images/home/img.jpg" class="card-img-top" alt="...">
+    <div class="product ">
+        <div class="card col-Ig-4 col-md-6 col-sm-12" style="width: 20rem" *ngFor="let product of products">
+            <img [src]="product.imgUrl" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Product Name</h5>
-              <p class="card-text">$100</p>
+              <h5 class="card-title">{{product.name}}</h5>
+              <p class="card-text">${{product.price}}</p>
+            
               <a href="#" class="btn btn-primary">Add to card</a>
-              <a href="#" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Product Details
+              <a href="#" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="getProductDetail(product)">Product Details
                
               </a>
             </div>
@@ -28,15 +29,16 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3" style="max-width: 540px;" *ngIf="productDetails">
                 <div class="row g-0">
                   <div class="col-md-4">
                     <img src="assets/images/home/img.jpg" class="img-fluid rounded-start" alt="..." style="height:100%">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Product Name</h5>
-                      <p class="card-text">$100</p>
+                      public productDetails: any;
+                   <h5 class="card-title">{{ productDetails.name}}</h5>
+                      <p class="card-text">{{productDetails.price}}</p>
                       <p class="card-text">
                         
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quaerat?</p>
