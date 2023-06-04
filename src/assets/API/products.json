@@ -1,0 +1,40 @@
+{
+    "data": [
+        
+        {
+            "name": "product 1",
+            "price": "100",
+            "description": "This is a wider card with supporting text below as a in to additional content.",
+            "imgUrl":"assets/images/home/img.jpg"
+
+        },
+        {
+            "name": "product 2",
+            "price": "200",
+            "description": "This is a wider card with supporting text below as a in to additional content.",
+            "imgUrl":"assets/images/home/img.jpg"
+
+        },
+        {
+            "name": "product 3",
+            "price": "300",
+            "description": "This is a wider card with supporting text below as a in to additional content.",
+            "imgUrl":"assets/images/home/img.jpg"
+
+        },
+        {
+            "name": "product 4",
+            "price": "400",
+            "description": "This is a wider card with supporting text below as a in to additional content.",
+            "imgUrl":"assets/images/home/img.jpg"
+
+        },
+        {
+            "name": "product 5",
+            "price": "500",
+            "description": "This is a wider card with supporting text below as a in to additional content.",
+            "imgUrl":"assets/images/home/img.jpg"
+
+        }
+    ]
+}
