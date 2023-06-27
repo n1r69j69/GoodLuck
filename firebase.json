@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "niranjansproject",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

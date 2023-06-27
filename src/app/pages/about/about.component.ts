@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  public products;
+  public constructor() {
+    let Products = JSON.parse(localStorage.getItem('cartProducts'));
+    console.log(Products);
+    this.products = Products;
+  }
 
 }

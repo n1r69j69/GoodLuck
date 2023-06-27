@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "niranjan-a18ce": {
+      "hosting": {
+        "niranjansproject": [
+          "niranjan-a18ce"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "niranjan-a18ce"
+  }
+}

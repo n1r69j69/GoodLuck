@@ -1,27 +1,28 @@
-
 <div class="container">
-    <div class="product ">
-        <div class="card col-Ig-4 col-md-6 col-sm-12" style="width: 20rem" *ngFor="let product of products">
-            <img [src]="product.imgUrl" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">{{product.name}}</h5>
-              <p class="card-text">${{product.price}}</p>
-            
-              <a href="#" class="btn btn-primary">Add to card</a>
-              <a href="#" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="getProductDetail(product)">Product Details
-               
-              </a>
-            </div>
-          </div>
-              </div>
+  <div class="product ">
+    <div class="card col-Ig-4 col-md-6 col-sm-12" style="width: 20rem" *ngFor="let product of products">
+      <img [src]="product.imgUrl" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <p class="card-text">${{product.price}}</p>
 
-              <!--Modal-->
+        <a href="#" class="btn btn-primary">Add to card</a>
+        <a href="#" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+          (click)="getProductDetail(product)">Product Details
 
-              <!-- Button trigger modal -->
+        </a>
+      </div>
+    </div>
+  </div>
 
-  
+  <!--Modal-->
+
+  <!-- Button trigger modal -->
+
+
   <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -29,30 +30,29 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <div class="card mb-3" style="max-width: 540px;" *ngIf="productDetails">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="assets/images/home/img.jpg" class="img-fluid rounded-start" alt="..." style="height:100%">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      
-                   <h5 class="card-title">{{ productDetails.name}}</h5>
-                      <p class="card-text">{{productDetails.price}}</p>
-                      <p class="card-text">
-                        
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quaerat?</p>
-                    </div>
-                  </div>
+          <div class="card mb-3" style="max-width: 540px;" *ngIf="productDetails">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/images/home/img.jpg" class="img-fluid rounded-start" alt="..." style="height:100%">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+
+                  <h5 class="card-title">{{ productDetails.name}}</h5>
+                  <p class="card-text">{{productDetails.price}}</p>
+                  <p class="card-text">
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quaerat?</p>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Add to Card</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="addToCart(productDetails)"> Add
+            to Card</button>
         </div>
       </div>
     </div>
   </div>
-              
-     
